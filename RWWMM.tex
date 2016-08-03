@@ -1,0 +1,201 @@
+%****************************************************************************
+% IEEE Paper Template for US-LETTER Page Size (V1)
+% Sample Conference Paper using IEEE LaTeX style file for US-LETTER pagesize.
+% Copyright (C) 2006 Causal Productions Pty Ltd.
+% Permission is granted to distribute and revise this file provided that
+% this header remains intact.
+%
+% This template has been modified for use with IEEE Radio & Wireless
+% Symposium, and it is solely intended for use with this conference. 
+%****************************************************************************
+% Do not change the document class 
+\documentclass[10pt,conference,letterpaper]{RWWTemplate}
+
+%****************************************************************************
+% You may add more packages if necessary, but the compliance with the
+% conference proceeding is not guaranteed. Please check against this
+% template very carefully if other packages are included. 
+\usepackage{times,amsmath,epsfig}
+
+%****************************************************************************
+% Title
+\title{Metamaterials}
+
+%****************************************************************************
+% Author Information 
+\author{%
+J. Clerk Maxwell, Michael Faraday, and Andr\'{e} M. Amp\`{e}re (List authors
+on this line using 12 pt\\
+Times font - use a second line if necessary)%
+% add some space between author names and affils
+\vspace{12pt}\\
+Radio and Wireless Research, City, State/Region, Mail/Zip Code, Country
+(authors affiliation(s) listed \\
+here in 12 point Times font - use a second line if necessary)%
+}
+
+% An example with multiple affiliations
+%\author{%
+%J. Clerk Maxwell{\small $~^{\#}$}, Michael Faraday{\small $~^{*}$}, 
+%and Andre M. Ampere{\small $~^{\#}$}%
+% add some space between author names and affils
+%\vspace{12pt}\\
+%$~^{\#}$Communication Research, City, State/Region, Mail/Zip Code,
+%Country \\
+%$~^{*}$Second Company Address Including Country Name
+%}
+%
+
+%****************************************************************************
+\begin{document}
+\maketitle
+
+%****************************************************************************
+%
+\begin{abstract}
+
+\end{abstract}
+
+%****************************************************************************
+% NOTE keywords are not used for conference papers so do not populate
+% them
+\begin{keywords}
+Ceramics, coaxial resonators, delay filters, delay-lines, power amplifiers.
+\end{keywords}
+
+%****************************************************************************
+\section{Introduction}
+%
+
+%****************************************************************************
+\section{Overview of the Proceedings Format}
+
+%****************************************************************************
+\section{Detailed Text Formatting}
+\label{sec:page style}
+
+
+\begin{table*}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.4}
+    \caption{Summary of typographical settings}
+    % NOTE!  caption goes _before_ the table contents !!
+    \label{tab:font-sizes}
+
+    \begin{small}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+    \hline
+     & \multicolumn{3}{|c|}{\bfseries Font
+    Specifics} & \multicolumn{5}{|c|}{\bfseries Paragraph Description}
+    \\ 
+
+    {\bfseries Section} & \multicolumn{3}{|c|}{(Times Roman unless
+    specified)} & \multicolumn{3}{|c|}{spacing (in points)} &
+    alignment & indent \\
+
+    & style & size & special & line & before & after & & (in inches)
+    \\ \hline
+
+    Title & plain & 18 & none & single & 6 & 6 & centered & none \\
+    \hline
+
+    Author List & plain & 12 & none & single & 6 & 6 & centered & none
+    \\ \hline
+
+    Affiliations & plain & 12 & none & single & 6 & 6 & centered &
+    none \\ \hline
+
+    Abstract & bold & 9 & none & exactly 10 & 0 & 0 & justified &
+    0.125 1st line \\ \hline
+
+    Index Terms & bold & 9 & none & exactly 10 & 0 & 0 & justified &
+    0.125 1st line \\ \hline
+
+    Headings & plain & 10 & small caps & exactly 12 & 18 & 6 &
+    centered & none \\ \hline
+
+    Subheadings & italic & 10 & none & exactly 12 & 6 & 6 & left &
+    none \\ \hline
+
+    Body Paragraphs & plain & 10 & none & exactly 12 & 0 & 0 &
+    justified & 0.125 1st line \\ \hline
+
+    Equations & \multicolumn{3}{|c|}{Symbol font for special
+    characters} & single & 6 & 6 & centered & none \\ \hline
+
+    Figures & \multicolumn{3}{|c|}{6 to 9 point sans serif
+    (Helvetica)} & single & 0 & 0 & centered & none \\ \hline
+
+    Figure Captions & plain & 9 & none & 10 & 0 & 0 & justified &
+    none, tab at 0.5 \\ \hline
+
+    References & plain & 9 & none & 10 & 0 & 0 & justified & 0.25
+    hanging \\ \hline
+
+    \end{tabular}
+    \end{small} 
+\end{table*}
+
+\subsection{Major Subsections}
+
+
+
+
+\subsection{Equations}
+Equations should be centered in the column and numbered sequentially. Place the equation number to the right of the equation within a parenthesis, with right justification within its column. An example would be
+\begin{equation}
+  \oint_C {\bf E} \cdot d{\bf L} = - \frac{\partial}{\partial t} 
+  \int\int {\bf B} \cdot d{\bf S}
+  \label{eq1}
+\end{equation}
+or
+\begin{equation}
+  \nabla \times {\bf H} = {\bf J} + \frac{\partial{\bf D}}{\partial t}.
+  \label{eq2}
+\end{equation}
+
+
+
+%****************************************************************************
+\section{Figures}
+
+ce figure captions directly below each figure. Note that figure captions are always (left and right) justified, rather than centered, even if they are less than a single full line in length. See the captions for Fig. \ref{fig:sample_graph1} and Fig. \ref{fig:sample_graph2}.
+
+\begin{figure}[htbp]
+	\centerline{\psfig{figure=figure1.pdf} }
+	\caption{Estimated relationship between the time an author
+	spends reading these instructions and the quality of the
+	author's Proceedings article.}
+	\label{fig:sample_graph1}
+\end{figure}
+
+
+
+
+\begin{figure}[htbp]
+	\centerline{\psfig{figure=figure2.pdf} }
+	\caption{Example of an improperly titled figure. The numerics
+	and the labels on the axes are illegible. This may cause a
+	submission to be rejected. Don't let this happen to you!}
+	\label{fig:sample_graph2}
+\end{figure}
+
+
+%****************************************************************************
+\section{Citing Previous Work}
+
+
+
+%****************************************************************************
+\section{Conclusion}
+
+
+%****************************************************************************
+\section*{Acknowledgment}
+The authors wish to acknowledge the assistance and support of the IEEE Publications and the RWW Publication Committee. 
+
+%****************************************************************************
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,RWWExample}
+
+\end{document}
